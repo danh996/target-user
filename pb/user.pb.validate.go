@@ -164,32 +164,6 @@ func (m *GetUserByIDResponse) validate(all bool) error {
 
 	// no validation rules for Email
 
-	// no validation rules for Phone
-
-	// no validation rules for Age
-
-	// no validation rules for IdentityCard
-
-	// no validation rules for Job
-
-	// no validation rules for Role
-
-	// no validation rules for Sex
-
-	// no validation rules for ProvinceID
-
-	// no validation rules for DistrictID
-
-	// no validation rules for WardID
-
-	// no validation rules for LocationScore
-
-	// no validation rules for CreatedAt
-
-	// no validation rules for UpdatedAt
-
-	// no validation rules for UserID
-
 	if len(errors) > 0 {
 		return GetUserByIDResponseMultiError(errors)
 	}
