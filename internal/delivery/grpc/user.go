@@ -30,21 +30,9 @@ func (d *userDelivery) GetUserByID(ctx context.Context, req *pb.GetUserByIDReque
 		return nil, err
 	}
 	return &pb.GetUserByIDResponse{
-		UserID:        u.ID.Hex(),
-		Role:          pb.UserRole(u.Role),
-		Fullname:      u.Fullname,
-		Phone:         u.Phone,
-		Age:           u.Age,
-		IdentityCard:  u.IdentityCard,
-		Job:           u.Job,
-		Sex:           pb.UserSex(u.Sex),
-		ProvinceID:    u.ProvinceID,
-		DistrictID:    u.DistrictID,
-		WardID:        u.WardID,
-		LocationScore: u.LocationScore,
-		// CreatedAt:      u.CreatedAt.String(),
-		// UpdatedAt:      u.UpdatedAt.String(),
-		BlockedUserIDs: u.BlockedUserIDS,
-		Email:          u.Email,
+
+		Fullname: u.Fullname,
+
+		Email: u.Email,
 	}, nil
 }
